@@ -1,7 +1,8 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 
-function App() {
+
+function Beyond1() {
   const svglogo =
     "https://drive.google.com/uc?export=view&id=1oLABfEZbyuvIjQh5COAs6wWdhn9N5hpw";
 
@@ -75,7 +76,7 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setEvents("senspa");
+      setEvents("beyond1");
     }, 60000);
     return () => clearInterval(interval);
   });
@@ -86,7 +87,7 @@ function App() {
       <div className="midColumn">
         <img src={svglogo} className="logo" alt="logo"></img>
         <u>
-          <p>SENSPA</p>
+          <p>BEYOND 1</p>
         </u>
         <h1>NOW</h1>
         <h5>AVAIABLE</h5>
@@ -97,7 +98,7 @@ function App() {
       <div className="midColumn">
         <img src={svglogo} className="logo" alt="logo"></img>
         <u>
-          <p>SENSPA</p>
+          <p>BEYOND 1</p>
         </u>
         <h1>NOW</h1>
         <h2>{currentEvent.subject}</h2>
@@ -175,4 +176,4 @@ function App() {
   );
 }
 
-export default App;
+export default Beyond1;

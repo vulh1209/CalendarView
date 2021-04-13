@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ////////// wrap */
+.wrapper {
+  color: white;
   display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  flex-wrap: nowrap;
+  height: 97.5vh;
+  align-items: stretch;
+}
+
+.leftColumn {
+  flex: 20%;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("https://picsum.photos/500");
+  background-size: cover;
+}
+.midColumn {
+  background-color: #a59c87;
+  flex: 60%;
+  padding-left: 4rem;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+}
+
+.rightColumn {
+  flex: 20%;
+  background-color: #212223;
+  padding-left: 1rem;
+}
+
+
+/* ////////// left */
+.clock {
+  width: 100%;
+  height: 20vw;
+  background-color: goldenrod;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clock > h1 {
+  font-size: 7rem;
+  text-align: center;
+  vertical-align: text-top;
+  margin: 0px;
+  font-weight: lighter;
+}
+.clock > p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.room {
+  width: 20vw;
+  height: 26vw;
+}
+
+
+
+/* ////////// mid */
+
+.logo {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    max-height: 15vh;
+    object-fit: scale-down;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.midColumn > u {
+  font-size: 6rem;
+  margin: 0px;
+  width: 60vw;
+  text-align: left;
+  font-weight: bolder;
+  padding: 0rem;
+}
+
+.midColumn > u > p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.midColumn > h1 {
+  margin: 0px;
+  padding: 1rem 0rem;
+  color: brown;
+  font-size: 2rem;
+}
+
+.midColumn > p {
+  margin: 0px;
+  padding: 1rem 0rem;
+  font-size: 2rem;
+  color: lightblue;
+}
+
+.midColumn > h2 {
+  margin: 0px;  
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+
+.midColumn > div {
+  position: fixed;
+  bottom: 0px;
+  left: 20vw;
+  height: 20vh;
+}
+
+.midColumn > div > h3 {
+  margin: 0px;
+  padding: 0rem 2rem;
+  color: brown;
+  font-size: 2rem;
+}
+
+.midColumn > div > h4 {
+  bottom: 0px;
+  padding: 0rem 2rem;
+  font-size: 2rem;
+}
+
+.midColumn > h5 {
+  margin: 0px;  
+  font-size: 8rem;
+  padding: 1rem 0rem;
+  color: goldenrod;
+}
+
+/* ////////// right */
+.rightColumn > u {
+  font-size: 2.5rem;
+  margin: 0px;
+  width: 60vw;
+  text-align: left;
+  font-weight: bolder;
+  padding: 0rem;
+}
+
+.rightColumn > u > p {
+  margin: 0px;
+  padding: 2rem 0rem;  
+  text-align: center;
+}
+
+.comming{
+    height: 34vh;
+}
+
+.comming>h1{
+    font-size: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+    color: goldenrod;
+}
+
+.comming>h2{
+  font-size: 2rem;
+  padding: 0rem;
+  text-align: left;
+}
+
+.comming>p{
+  font-size: 1.5rem;
+  padding: 0rem;
+  text-align: left;
+}
+
+.comming>div{
+  margin-top: 4rem;
+  padding: 0rem;
+}
+
+.comming>div>h3{
+  font-size: 1.5rem;
+  padding: 0rem;
+  text-align: left;
+}
+
+.comming>div>h4{
+  font-size: 1.5rem;
+  padding: 0rem;
+  text-align: left;
 }

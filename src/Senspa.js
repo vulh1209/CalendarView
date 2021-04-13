@@ -1,7 +1,8 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 
-function App() {
+
+function Senspa() {
   const svglogo =
     "https://drive.google.com/uc?export=view&id=1oLABfEZbyuvIjQh5COAs6wWdhn9N5hpw";
 
@@ -175,4 +176,4 @@ function App() {
   );
 }
 
-export default App;
+export default Senspa;
