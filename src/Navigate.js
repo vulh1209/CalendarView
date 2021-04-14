@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Eden from "./Eden";
+import App from "./App";
 import Senspa from "./Senspa";
 import Legacy from "./Legacy";
 import Lincoln from "./Lincoln";
@@ -12,6 +13,9 @@ export default function BasicExample() {
   return (
     <Router>
       <Switch>
+      <Route exact path="/">
+          <App />
+        </Route>
         <Route exact path="/senspa">
           <Senspa />
         </Route>
